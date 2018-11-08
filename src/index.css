@@ -1,0 +1,175 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: white;
+  font-family: 'Coda', cursive;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.bg-image {
+  /* The image used */
+  background-image: url("bg5.jpg");
+  
+  /* Add the blur effect */
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+  
+  /* Full height */
+  height: 600px; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.5); /* Black w/opacity/see-through */
+  color: white;
+  border: 3px solid #1F313D;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -155%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 3em;
+  text-transform: uppercase;
+}
+
+.contentContainer {
+  text-align: center;
+}
+
+.lapContainer {
+  width: 40%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+.lapContainer p {
+  width: 50%;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+img {
+    width: 50%;
+    transition: .3s ease;
+}
+
+img:hover {
+  box-shadow: 3px 5px 7px rgb(100, 100, 100);
+}
+
+span {
+  margin-left: 10px;
+}
+ 
+
+.span2 {
+  color: red;
+  border-bottom: red 1px solid;
+  font-size: 1.3em;
+}
+
+.strikethrough {
+  position: relative;
+}
+.strikethrough:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 50%;
+  right: 0;
+  border-top: 1px solid;
+  border-color: inherit;
+
+  -webkit-transform:rotate(-5deg);
+  -moz-transform:rotate(-5deg);
+  -ms-transform:rotate(-5deg);
+  -o-transform:rotate(-5deg);
+  transform:rotate(-5deg);
+}
+
+.footer {
+  
+    width: 100%;
+    background-color: #1F313D;
+    color: white;
+    text-align: center;
+}
+
+.footerText {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+
+
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer a:hover {
+  color: #C1655E;
+}
+
+@media only screen and (max-width: 544px) {
+
+
+  h1 {
+    font-size: 2em;
+    letter-spacing: 0px;
+  }
+
+  .bg-image {
+    height: 300px;
+  }
+
+  .bg-text {
+    width: 100%;
+    top: 30%;
+  }
+
+  .lapContainer {
+    width: 100%;
+  }
+  
+}
+
+@media only screen and (max-width: 767px) {
+
+  
+}
+
+@media only screen and (max-width: 549px) {
+
+}
+
