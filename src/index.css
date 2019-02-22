@@ -29,7 +29,7 @@ body, html {
   
   /* Full height */
   height: 600px; 
-  
+  background-attachment: fixed;
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
@@ -155,7 +155,7 @@ span {
 
   .bg-text {
     width: 100%;
-    top: 30%;
+ 
   }
 
   .lapContainer {
@@ -164,12 +164,16 @@ span {
   
 }
 
-@media only screen and (max-width: 767px) {
-
+@media only screen and (max-width: 401px) {
+  .bg-text {
+    top: auto;
+  }
   
 }
 
-@media only screen and (max-width: 549px) {
-
+@media only screen and (max-width: 874px) {
+  .bg-text {
+    padding: 0;
+  }
 }
 
