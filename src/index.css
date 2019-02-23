@@ -1,9 +1,5 @@
 body {
-  margin: 0;
   padding: 0;
-
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   background-color: white;
   font-family: 'Coda', cursive;
 }
@@ -11,7 +7,6 @@ body {
 body, html {
   height: 100%;
   margin: 0;
-  
 }
 
 * {
@@ -26,17 +21,11 @@ body, html {
   /* Add the blur effect */
   filter: blur(2px);
   -webkit-filter: blur(2px);
-  
-  /* Full height */
   height: 600px; 
   background-attachment: fixed;
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
 }
 
-/* Position text in the middle of the page/image */
 .bg-text {
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0, 0.5); /* Black w/opacity/see-through */
@@ -155,7 +144,7 @@ span {
 
   .bg-text {
     width: 100%;
- 
+    top: 20%;
   }
 
   .lapContainer {
