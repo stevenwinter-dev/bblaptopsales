@@ -14,19 +14,20 @@ class APICall extends Component {
         .then(results => {
           return results.json();
         }).then(data => {
-            let bbdata = data.products.map((poo) => {
+            let bbdata = data.products.map((poo, i) => {
+              let name = poo.name.substring(0, 90) + '...';
                 return(
-                    <div key={poo.products} className="lapContainer">
-                      <div className="grow">
-                      <a href={poo.url}><img src={poo.image} /></a>
+                    <div key={i} className="lapContainer">
+                      {/* <p>{poo.itemUpdateDate}</p> */}
+                      <div>
+                      <a href={poo.url}><img src={poo.image} alt={poo.name}/></a>
                       </div>
-                      <p>{poo.name}</p>
+                      <p>{name}</p>
                       <span className="span1 strikethrough">${poo.regularPrice}</span><span className="span2">${poo.salePrice}</span>
                     </div>
                 )
             })
             this.setState({bbdata: bbdata});
-            console.log("state", this.state.bbdata);
         })
     }
 
