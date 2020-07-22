@@ -14,16 +14,15 @@ class APICall extends Component {
         .then(results => {
           return results.json();
         }).then(data => {
-            let bbdata = data.products.map((poo, i) => {
-              let name = poo.name.substring(0, 90) + '...';
+            let bbdata = data.products.map((laptop, i) => {
+              let name = laptop.name.substring(0, 90) + '...';
                 return(
                     <div key={i} className="lapContainer">
-                      {/* <p>{poo.itemUpdateDate}</p> */}
                       <div>
-                      <a href={poo.url}><img src={poo.image} alt={poo.name}/></a>
+                      <a href={laptop.url}><img src={laptop.image} alt={laptop.name} className="lapImgs" /></a>
                       </div>
                       <p>{name}</p>
-                      <span className="span1 strikethrough">${poo.regularPrice}</span><span className="span2">${poo.salePrice}</span>
+                      <span className="span1 strikethrough">${laptop.regularPrice}</span><span className="span2">${laptop.salePrice}</span>
                     </div>
                 )
             })
