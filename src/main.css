@@ -20,7 +20,7 @@ body {
 }
 
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Images/laptop.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Images/laptoplarge.jpg");
   background-size: 1920px 1080px;
   background-position: right;
   height: 80vh;
