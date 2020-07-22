@@ -1,21 +1,16 @@
-import React, {Component} from 'react';
-import Header from './Header/Header';
-import APICall from './APICall/APICall';
-import Footer from './Footer/Footer';
+import React from 'react';
+import Header from './Components/Header';
+import APICall from './api/APICall';
+import Footer from './Components/Footer';
 
-class App extends Component {
-
-  render() {
+function App() {
     return (
       <div className="App">
-      <Header />
-      <div className="contentContainer">
-      <APICall />
-      </div>
-      <Footer />
+        <Header />
+        <APICall />
+        <Footer />
       </div>
     );
   }
-}
 
 export default App;
