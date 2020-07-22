@@ -188,4 +188,7 @@ color: #b830a1;
     .card {
       width: 70%;
     }
+    header h2 {
+      font-size: 1rem;
+    }
   }
